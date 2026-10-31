@@ -1,4 +1,4 @@
-import { app } from "../app.js";
+import { app } from "./app.js";
 import { connectDb } from "./config/db.js";
 import { config } from "./config/env.js";
 import { startBillingJob } from "./jobs/billing.job.js";
