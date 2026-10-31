@@ -1,13 +1,29 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "server.js",
+  "description": "an hackton project of subsciption mangagement ",
+  "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seeds/admin.js",
+    "seed:demo": "node src/seeds/demo.js"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.9",
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.4",
+    "nodemailer": "^10.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
